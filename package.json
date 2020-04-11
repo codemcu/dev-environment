@@ -1,0 +1,10 @@
+{
+  "name": "dev-enviroment",
+  "version": "0.0.1",
+  "description": "A whole development environment in one package",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [],
+  "author": "Mauricio Correa <frontent.mcu@gmail.com>",
+  "license": "Apache 2.0"
+}
