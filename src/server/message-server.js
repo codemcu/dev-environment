@@ -1,3 +1,8 @@
-import chalk from "chalk";
+import chalk from 'chalk';
 
-console.log(chalk.green("running in dev mode"));
+export const onRunning = () => {
+  chalk.green('running in dev mode');
+  return 'running in dev mode';
+};
+
+onRunning();

@@ -18,6 +18,10 @@ app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, './../index.html'));
 });
 
+app.get('/users', (req, res) => {
+  res.send({ data: [{ name: 'jonas' }, { name: 'carlos' }] });
+});
+
 app.listen(port, () => {
   open('http://localhost:8081');
   console.log(`listening in port ${port}`);
