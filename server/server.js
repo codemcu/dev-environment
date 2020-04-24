@@ -2,7 +2,7 @@ import express from 'express';
 import path from 'path';
 import open from 'open';
 import webpack from 'webpack';
-import config from './../../webpack.config.dev';
+import config from './../webpack.config.dev';
 
 const app = express();
 const port = 8081;
@@ -15,7 +15,7 @@ app.use(
 );
 
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, './../index.html'));
+  res.sendFile(path.join(__dirname, './../src/index.html'));
 });
 
 app.get('/users', (req, res) => {

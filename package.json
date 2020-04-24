@@ -4,7 +4,7 @@
   "description": "development environment in one package whithout frameworks",
   "main": "index.js",
   "scripts": {
-    "start": "babel-node ./src/server/server.js",
+    "start": "babel-node ./server/server.js",
     "lint": "eslint ./src",
     "lint:fix": "eslint ./src --fix",
     "test": "jest --watch"
