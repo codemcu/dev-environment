@@ -9,7 +9,7 @@
 - [x] Bundling
 - [x] Linting
 - [x] Testing
-- [ ] Integración Contínua
+- [x] Integración Contínua
 
 1. Server
    ```json
@@ -18,7 +18,7 @@
 2. Automatización
    ```json
    "scripts": {
-      "start": "babel-node ./src/server/server.js",
+      "start": "babel-node ./server/server.js",
       "lint": "eslint ./src",
       "lint:fix": "eslint ./src --fix",
       "test": "jest --watch"
@@ -42,6 +42,16 @@
     "prettier": "2.0.4",
    ```
 6. Testing
+
    ```json
     "jest": "25.3.0",
+   ```
+
+7. Integración Contínua
+   ```yml
+   language: node_js
+   node_js:
+     - v8
+     - v10
+     - v12
    ```
